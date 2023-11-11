@@ -1,0 +1,71 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   height:100vh;
+   background-image: url(/images/earth.jpg); 
+   
+}
+
+
+
+.card{
+  
+    background-color:rgba(0, 0, 0, 0.3);
+    padding:20px;
+    font-family: 'Gabarito', cursive;
+    animation-name: example;
+    animation-duration: 2s;
+   
+ 
+}
+
+@keyframes example  {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+label{
+    font-size: large;
+    font-weight: bold;
+}
+
+
+input{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: whitesmoke;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+input::placeholder {
+    color:whitesmoke;
+    opacity: 0.7;
+}
+
+input:hover{
+    border:solid #00308F 2px;
+    transition:all 2s ease;
+}
+
+button{
+    border-radius: 50%;
+    height:45px;
+    width:45px;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    background-color: #00308F;
+    transition: all 2s ease;
+}
+
+.description{
+    display:flex;
+    gap:5px;
+}
