@@ -10,7 +10,7 @@ async function fetchWeatherData(location) {
     const config = '2d6edec5fa74eee4828f548a33d03398';
     try {
         // Fetch geo coordinates
-        let geoResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${config}`);
+        let geoResponse = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${config}`);
         let geoData = await geoResponse.json();
         const { lat, lon } = geoData[0];
 
